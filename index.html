@@ -10,13 +10,28 @@
 <body>
     <header id="header">
         <h1 id="title">Lorem ipsum dolor sit amet</h1>
-        <p id="description">Lorem ipsum dolor sit amet</p>
     </header>
-
+       
     <main id="main">
+        <p id="description">Lorem ipsum dolor sit amet</p>
         <form action="" id="survey-form" method="get">
-            
+            <!-- name input -->
+            <label for="name" class="label">please enter your name</label>
+            <input type="text" id="name" name="name" required placeholder="enter your name here">
+            <br>
+            <!-- email input -->
+            <label for="email" class="label">please enter your email adress</label>
+            <input type="email" id="email" name="email" required placeholder="enter your email here">
+            <br>
+            <!-- number input -->
+            <label for="number" class="label">please enter your age</label>
+            <input type="number" id="number" name="age" min="18" max="110" placeholder="18" required>
+            <br>
+
+            <!-- submit btn -->
+            <button type="submit" id="submit-btn" value="submit">Submit</button>
         </form>
+
     </main>
 
 
