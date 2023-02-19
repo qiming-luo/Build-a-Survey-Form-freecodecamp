@@ -13,7 +13,10 @@
     </header>
        
     <main id="main">
-        <p id="description">Lorem ipsum dolor sit amet</p>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
         <form action="" id="survey-form" method="get">
             <section class="general-info">
                  <!-- name input -->
@@ -31,10 +34,10 @@
             </section>
             
             <section class="dropdown">
-                <label for="dropdown" id="dropdown-label">What language is ypur first language?</label>
-                <select name="dropdown-menu" id="dropdown">
+                <label for="dropdown" id="dropdown-label">What language is your first language?</label>
+                <select name="dropdown" id="dropdown">
                     <option value="hakka">hakka</option>
-                    <option value="madrin">madrin</option>
+                    <option value="mandrin">mandrin</option>
                     <option value="english">english</option>
                     <option value="cantonnese">cantonnese</option>
                 </select>
@@ -42,15 +45,23 @@
 
             <section class="radio-select">
                 <p class="radio-description">Do you want to learn Hakka if you don't speak Hakka?</p>
-                <input type="radio" id="yes" name="yes"><label for="yes" id="yes-label">Yes</label>
+                <input type="radio" id="yes" name="yes" value="yes"><label for="yes" id="yes-label">Yes</label>
                 <br>
-                <input type="radio" id="no" name="no"><label for="no" id="no-label">No</label>
+                <input type="radio" id="no" name="no" value="no"><label for="no" id="no-label">No</label>
             </section>
 
-            <section class=""></section>
+            <section class="checkbox">
+                <p class="checkbox-description">What languages do you speak really well ?</p>
+                <input type="checkbox" name="hakka" id="hakka" value="hakka"><label for="hakka">Hakka</label>
+                <input type="checkbox" name="english" id="english" value="english"><label for="english">English</label>
+                <input type="checkbox" name="mandrin" id="madrin" value="madrin"><label for="madrin">Mandrin</label>
+            </section>
 
-
-
+            <section class="textarea">
+                <label for="user-suggestion">What can we do to preserve Hakka language? Please give your suggestions.</label>
+                <br>
+                <textarea name="user-suggestion" id="user-suggestion" cols="30" rows="10"></textarea>
+            </section>
 
             <!-- submit btn -->
             <button type="submit" id="submit-btn" value="submit">Submit</button>
