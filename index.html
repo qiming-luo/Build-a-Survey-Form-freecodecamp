@@ -15,18 +15,42 @@
     <main id="main">
         <p id="description">Lorem ipsum dolor sit amet</p>
         <form action="" id="survey-form" method="get">
-            <!-- name input -->
-            <label for="name" class="label">please enter your name</label>
-            <input type="text" id="name" name="name" required placeholder="enter your name here">
-            <br>
-            <!-- email input -->
-            <label for="email" class="label">please enter your email adress</label>
-            <input type="email" id="email" name="email" required placeholder="enter your email here">
-            <br>
-            <!-- number input -->
-            <label for="number" class="label">please enter your age</label>
-            <input type="number" id="number" name="age" min="18" max="110" placeholder="18" required>
-            <br>
+            <section class="general-info">
+                 <!-- name input -->
+                <label for="name" class="label" id="name-label">please enter your name</label><br>
+                <input type="text" id="name" name="name" required placeholder="enter your name here">
+                <br>
+                <!-- email input -->
+                 <label for="email" class="label" id="email-label">please enter your email adress</label><br>
+                <input type="email" id="email" name="email" required placeholder="enter your email here">
+                <br>
+                <!-- number input -->
+                <label for="number" class="label" id="number-label">please enter your age</label><br>
+                <input type="number" id="number" name="age" min="18" max="110" placeholder="select orenter your age" required>
+                <br>
+            </section>
+            
+            <section class="dropdown">
+                <label for="dropdown" id="dropdown-label">What language is ypur first language?</label>
+                <select name="dropdown-menu" id="dropdown">
+                    <option value="hakka">hakka</option>
+                    <option value="madrin">madrin</option>
+                    <option value="english">english</option>
+                    <option value="cantonnese">cantonnese</option>
+                </select>
+            </section>
+
+            <section class="radio-select">
+                <p class="radio-description">Do you want to learn Hakka if you don't speak Hakka?</p>
+                <input type="radio" id="yes" name="yes"><label for="yes" id="yes-label">Yes</label>
+                <br>
+                <input type="radio" id="no" name="no"><label for="no" id="no-label">No</label>
+            </section>
+
+            <section class=""></section>
+
+
+
 
             <!-- submit btn -->
             <button type="submit" id="submit-btn" value="submit">Submit</button>
