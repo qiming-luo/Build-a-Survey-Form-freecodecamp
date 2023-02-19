@@ -1,6 +1,71 @@
+html {
+    font-size: 18px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color: lightblue;
+    padding: 1rem 2rem;
+}
+
+#header h1{
+    text-align: center;
+}
+
+#main{
+    padding-top: 1rem;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width:760px){
+    #main{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 414px){
+    #main{
+        width: 100%;
+    }
+}
+
+#description {
+    padding-bottom: 1rem;
+}
+
+#name,#email,#number {
+    width: 40%;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+#dropdown {
+    width: 30%;
+    text-transform: capitalize;
+}
+
+#user-suggestion {
+    margin-top: 0.5rem;
+}
+
+#submit-btn {
+    display: block;
+    font-size: larger;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#submit-btn:hover {
+    color: red;
+    padding: 0.8rem;
+    background-color: aliceblue;
+}
